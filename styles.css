@@ -376,17 +376,36 @@ section {
 }
 
 .contact-form {
-    display: none; /* Esconde caso ainda exista no HTML */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    text-align: left;
 }
 
 .form-group {
-    display: none;
+    margin-bottom: 1.5rem;
 }
 
-.form-group label,
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
 .form-group input,
 .form-group textarea {
-    display: none;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
 }
 
 /* Botões */
@@ -526,5 +545,13 @@ section {
         font-size: 1.5rem;
         bottom: 20px;
         right: 20px;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    section {
+        padding: 2.5rem 0;
     }
 }
